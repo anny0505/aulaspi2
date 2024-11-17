@@ -1,6 +1,20 @@
 package ifrn.pi2.eventos_remoto.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Evento {
+	
+	@Id
+	private Long matricula;
+	public Long getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(Long matricula) {
+		this.matricula = matricula;
+	}
 
 	private String nome;
 	private String local;
