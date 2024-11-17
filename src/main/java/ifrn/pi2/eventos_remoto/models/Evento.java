@@ -6,6 +6,12 @@ import jakarta.persistence.Id;
 @Entity
 public class Evento {
 	
+	@Override
+	public String toString() {
+		return "Evento [matricula=" + matricula + ", nome=" + nome + ", local=" + local + ", data=" + data
+				+ ", horario=" + horario + "]";
+	}
+
 	@Id
 	private Long matricula;
 	public Long getMatricula() {
